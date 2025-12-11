@@ -137,7 +137,7 @@ jobs:
       - name: Cloning OCI Factory
         uses: actions/checkout@v4
         with:
-          repository: canonical/oci-factory
+          repository: alesancor1/oci-factory
           fetch-depth: 1
 
       - name: Cloning Target Repo
