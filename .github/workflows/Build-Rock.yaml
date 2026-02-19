@@ -112,7 +112,7 @@ jobs:
           # Here we clone the oci-factory repo using the default ref of the checkout action.
           # It will be set to a ref that triggered this workflow if the workflow is run within the oci-factory repo,
           # or to the default branch of the oci-factory repo if the workflow is called from another repo.
-          repository: canonical/oci-factory
+          repository: alesancor1/oci-factory
           fetch-depth: 1
 
       - name: Cloning Target Repo
@@ -157,7 +157,7 @@ jobs:
       - name: Cloning OCI Factory
         uses: actions/checkout@v4
         with:
-          repository: canonical/oci-factory
+          repository: alesancor1/oci-factory
           fetch-depth: 1
 
       - name: Cloning Target Repo
@@ -237,7 +237,7 @@ jobs:
       - name: Cloning OCI Factory
         uses: actions/checkout@v4
         with:
-          repository: canonical/oci-factory
+          repository: alesancor1/oci-factory
           fetch-depth: 1
 
       - name: Cloning Target Repo
@@ -296,7 +296,7 @@ jobs:
       - name: Cloning OCI Factory
         uses: actions/checkout@v4
         with:
-          repository: canonical/oci-factory
+          repository: alesancor1/oci-factory
           fetch-depth: 1
 
       - run: src/build_rock/assemble_rock/requirements.sh
